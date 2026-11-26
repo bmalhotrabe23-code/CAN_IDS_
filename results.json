@@ -1,0 +1,186 @@
+{
+ "DoS": {
+  "Rule-based": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "fpr": 0.0
+  },
+  "Supervised MLP": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "fpr": 0.0
+  },
+  "One-class AE": {
+   "precision": 0.999,
+   "recall": 1.0,
+   "f1": 0.999,
+   "fpr": 0.0011
+  },
+  "AE + 2-of-3 filter": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "fpr": 0.0003
+  },
+  "Hybrid (proposed)": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "fpr": 0.0003
+  },
+  "_frames": 59267,
+  "_attack_frames": 26667
+ },
+ "Fuzzing": {
+  "Rule-based": {
+   "precision": 0.991,
+   "recall": 0.991,
+   "f1": 0.991,
+   "fpr": 0.0027
+  },
+  "Supervised MLP": {
+   "precision": 1.0,
+   "recall": 0.999,
+   "f1": 0.999,
+   "fpr": 0.0001
+  },
+  "One-class AE": {
+   "precision": 0.979,
+   "recall": 0.997,
+   "f1": 0.988,
+   "fpr": 0.0066
+  },
+  "AE + 2-of-3 filter": {
+   "precision": 0.964,
+   "recall": 0.981,
+   "f1": 0.972,
+   "fpr": 0.0113
+  },
+  "Hybrid (proposed)": {
+   "precision": 0.964,
+   "recall": 0.992,
+   "f1": 0.978,
+   "fpr": 0.0113
+  },
+  "_frames": 42601,
+  "_attack_frames": 10001
+ },
+ "Spoofing": {
+  "Rule-based": {
+   "precision": 0.275,
+   "recall": 0.275,
+   "f1": 0.275,
+   "fpr": 0.0036
+  },
+  "Supervised MLP": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "fpr": 0.0016
+  },
+  "One-class AE": {
+   "precision": 0.497,
+   "recall": 1.0,
+   "f1": 0.664,
+   "fpr": 0.005
+  },
+  "AE + 2-of-3 filter": {
+   "precision": 0.489,
+   "recall": 0.994,
+   "f1": 0.656,
+   "fpr": 0.0051
+  },
+  "Hybrid (proposed)": {
+   "precision": 0.489,
+   "recall": 0.994,
+   "f1": 0.656,
+   "fpr": 0.0051
+  },
+  "_frames": 32760,
+  "_attack_frames": 160
+ },
+ "Replay": {
+  "Rule-based": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "fpr": 0.0
+  },
+  "Supervised MLP": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "fpr": 0.0
+  },
+  "One-class AE": {
+   "precision": 0.424,
+   "recall": 1.0,
+   "f1": 0.596,
+   "fpr": 0.0034
+  },
+  "AE + 2-of-3 filter": {
+   "precision": 0.479,
+   "recall": 0.988,
+   "f1": 0.645,
+   "fpr": 0.0027
+  },
+  "Hybrid (proposed)": {
+   "precision": 0.482,
+   "recall": 1.0,
+   "f1": 0.651,
+   "fpr": 0.0027
+  },
+  "_frames": 32681,
+  "_attack_frames": 81
+ },
+ "Masquerade": {
+  "Rule-based": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "fpr": 0.0
+  },
+  "Supervised MLP": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "fpr": 0.0
+  },
+  "One-class AE": {
+   "precision": 0.634,
+   "recall": 0.728,
+   "f1": 0.678,
+   "fpr": 0.001
+  },
+  "AE + 2-of-3 filter": {
+   "precision": 0.848,
+   "recall": 0.691,
+   "f1": 0.762,
+   "fpr": 0.0003
+  },
+  "Hybrid (proposed)": {
+   "precision": 0.848,
+   "recall": 0.691,
+   "f1": 0.762,
+   "fpr": 0.0003
+  },
+  "_frames": 32601,
+  "_attack_frames": 81
+ },
+ "_model": {
+  "n_features": 22,
+  "mlp_params": 1281,
+  "ae_params": 956,
+  "mlp_int8_kB": 1.25,
+  "ae_int8_kB": 0.93,
+  "mlp_latency_us_python": 84.7,
+  "ae_latency_us_python": 61.9,
+  "mlp_macs": 1232,
+  "ae_macs": 896,
+  "normal_bus_load": 0.362,
+  "train_frames": 69268,
+  "n_ids": 40
+ }
+}
